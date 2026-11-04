@@ -1,0 +1,15 @@
+name: VeyrionRoleplay
+version: 1.0.0
+main: id.veyrion.roleplay.VeyrionPlugin
+api-version: '1.21'
+description: Intro UI + gacha ras untuk Veyrion Roleplay
+commands:
+  veyrion:
+    description: Perintah admin Veyrion
+    usage: /veyrion <menu|reload|reset|set|info>
+  ras:
+    description: Lihat ras kamu
+    usage: /ras
+permissions:
+  veyrion.admin:
+    default: op

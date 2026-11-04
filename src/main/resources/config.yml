@@ -1,0 +1,45 @@
+# ==== Veyrion Roleplay ====
+discord-link: "https://discord.gg/HQ3cM2psVX"
+
+# Resource pack (WAJIB di-host dulu, lalu isi url + sha1).
+# Kalau url dikosongkan, GUI tetap kebuka tapi tampil polos (tanpa desain).
+resource-pack:
+  url: ""
+  sha1: "2948653fa66ecf3ad94c36dc17dad5f592da6a8c"
+  required: true
+  prompt: "Veyrion Roleplay membutuhkan resource pack."
+  fallback-open-seconds: 20
+
+# Kursor buatan: item yang menempel di mouse selama GUI terbuka (butuh resource pack).
+cursor:
+  enabled: true
+
+intro:
+  blindness: true            # layar hitam di belakang GUI
+  teleport: ""               # contoh: "world,0.5,120,0.5,0,0" (kosong = tidak teleport)
+
+messages:
+  kick-exit: "Sampai jumpa di dunia Veyrion."
+  finish-title: "Veyrion"
+  finish-subtitle: "Roleplay"
+
+# Perintah console yang dijalankan saat pemain selesai gacha.
+# Placeholder: %player%  %race% (elf/beast/human/dragon)
+on-finish-commands: []
+#  - "lp user %player% parent add %race%"
+#  - "spawn %player%"
+
+# weight = peluang relatif. effects = potion effect permanen (format "nama:level", level mulai 0).
+races:
+  elf:
+    weight: 25
+    effects: []        # contoh: ["speed:0"]
+  beast:
+    weight: 25
+    effects: []        # contoh: ["jump_boost:0"]
+  human:
+    weight: 35
+    effects: []
+  dragon:
+    weight: 15
+    effects: []        # contoh: ["fire_resistance:0"]
